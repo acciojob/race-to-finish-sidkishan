@@ -1,4 +1,4 @@
-window.promises = [];
+window.promises = [prom1, prom2, prom3, prom4, prom5];
 
 // Do not change the code above this
 // add your promises to the array `promises`
@@ -27,7 +27,6 @@ let prom5 = new Promise((resolve) =>{
 		resolve();
 	}, 5000)
 })
-window.promises = [prom1, prom2, prom3, prom4, prom5];
 let x = Promise.any(promises);
 x.then(data => {
 	document.getElementById("output").value = data;
