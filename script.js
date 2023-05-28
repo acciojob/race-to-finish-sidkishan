@@ -29,4 +29,6 @@ let prom5 = new Promise((resolve) =>{
 })
 window.promises = [prom1, prom2, prom3, prom4, prom5];
 let x = Promise.any(promises);
-document.getElementById("output").value = x;
+x.then(data => {
+	document.getElementById("output").value = data;
+})
